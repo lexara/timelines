@@ -16,4 +16,13 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open <http://localhost:5000> to view your timeline.
+The app now listens on all interfaces by default so it can be previewed
+from a remote environment. To change the port, set the `PORT` environment
+variable before running:
+
+```bash
+PORT=8000 python app.py
+```
+
+Then open `http://localhost:8000` (or the forwarded port in your environment)
+to view your timeline.
