@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a {
+    text-decoration: none;
+    color: #333;
+}
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+.timeline .post {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.timeline .meta {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+form input, form textarea, form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    box-sizing: border-box;
+}
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+}
