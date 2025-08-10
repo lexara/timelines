@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Your Timeline</h2>
+{% if posts %}
+    <ul class="timeline">
+    {% for post in posts %}
+        <li class="post {{ post.visibility }}">
+            <div class="meta">
+                <span class="date">{{ post.date }}</span>
+                <span class="visibility">{{ post.visibility }}</span>
+            </div>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.content }}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No posts yet. <a href="{{ url_for('new_post') }}">Create one</a>.</p>
+{% endif %}
+{% endblock %}
